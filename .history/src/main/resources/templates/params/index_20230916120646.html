@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${text}">Document</title>
+</head>
+<body>
+    <li>
+        <a th:href="@{/params/view(text='Here from thymeleaf')}">/params/view?text=Here from thymeleaf</a>
+    </li>
+    <li>
+        <a th:href="@{/params/view(text='Here from thymeleaf2')}">/params/view?text=Here from thymeleaf2</a>
+    </li>
+</body>
+</html>

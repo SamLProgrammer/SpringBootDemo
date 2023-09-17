@@ -12,8 +12,8 @@
     </div>
     <p th:text="${user.firstName}"></p>
     <p th:text="${user.lastName}"></p>
-    <p th:if="${user.email}" th:text="${user.email}"></p>
-    <p th:if="${user.email == null}" th:text="'This user has no email'"></p>
+    <p th:if="${user.email != null}" th:text="${user.email}"></p>
+    <p th:if="${user.email == null}" th:text="''This user has no email'"></p>
 </body>
 
 </html>

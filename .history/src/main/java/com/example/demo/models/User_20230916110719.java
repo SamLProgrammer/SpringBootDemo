@@ -6,10 +6,9 @@ public class User {
     private String firstName;
     private String email;
 
-    public User(String firstName, String lastName, String email) {
+    public User(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.email = email;
     }
 
     public String getFirstName() {
